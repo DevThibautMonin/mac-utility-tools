@@ -5,4 +5,4 @@
 - Hide / Show hidden files
 
 ## Screenshots
-![Hidden files feature](./assets/hiddenFiles.png)
+![Hidden files feature](./screenshots/hiddenFiles.png)
