@@ -13,5 +13,6 @@ struct ToolsView : View {
     
     var body: some View {
         HiddenFilesView(toolState: toolState)
+        PresentationMode(toolState: toolState)
     }
 }

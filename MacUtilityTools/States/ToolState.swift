@@ -8,5 +8,6 @@
 import Foundation
 
 class ToolState: ObservableObject {
-    @Published var isToggle = false
+    @Published var hiddenFilesVisibility = false
+    @Published var presentationMode = false
 }
