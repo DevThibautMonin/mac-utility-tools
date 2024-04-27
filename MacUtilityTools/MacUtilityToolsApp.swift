@@ -12,7 +12,7 @@ struct MacUtilityToolsApp: App {
     @StateObject var toolState = ToolState()
     
     var body: some Scene {
-        MenuBarExtra("MacUtilityTools", systemImage: "hammer.circle.fill") {
+        MenuBarExtra("MacUtilityTools", image: "MacUtilityToolsIcon") {
             ToolsView(toolState: toolState)
         }.menuBarExtraStyle(.window)
     }
