@@ -14,8 +14,8 @@ struct PresentationMode : View {
     
     var body: some View {
             ToolItem(
-                offImage: "video.fill.badge.checkmark",
-                onImage: "video.badge.checkmark",
+                offImage: "video.badge.checkmark",
+                onImage: "video.fill.badge.checkmark",
                 description: "Presentation",
                 isOn: toolState.presentationMode
             ) {
