@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D68282BB2BDE7CF000865D9E /* ToolItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68282BA2BDE7CF000865D9E /* ToolItem.swift */; };
 		D68CA73C2BCED4A10000E242 /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68CA73B2BCED4A10000E242 /* PresentationMode.swift */; };
 		D68CA73F2BCEF0B60000E242 /* CommandViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68CA73E2BCEF0B60000E242 /* CommandViewmodel.swift */; };
 		D6B7324E2BC81AA600B93FA4 /* ToolState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7324D2BC81AA600B93FA4 /* ToolState.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D68282BA2BDE7CF000865D9E /* ToolItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolItem.swift; sourceTree = "<group>"; };
 		D68CA73B2BCED4A10000E242 /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
 		D68CA73E2BCEF0B60000E242 /* CommandViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandViewmodel.swift; sourceTree = "<group>"; };
 		D6B7324D2BC81AA600B93FA4 /* ToolState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolState.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				D6B7324F2BC81B2900B93FA4 /* ToolsView.swift */,
 				D6B732522BC8220700B93FA4 /* HiddenFilesView.swift */,
 				D68CA73B2BCED4A10000E242 /* PresentationMode.swift */,
+				D68282BA2BDE7CF000865D9E /* ToolItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				D6B732502BC81B2900B93FA4 /* ToolsView.swift in Sources */,
 				D6B732532BC8220700B93FA4 /* HiddenFilesView.swift in Sources */,
 				D68CA73C2BCED4A10000E242 /* PresentationMode.swift in Sources */,
+				D68282BB2BDE7CF000865D9E /* ToolItem.swift in Sources */,
 				D68CA73F2BCEF0B60000E242 /* CommandViewmodel.swift in Sources */,
 				D6B7324E2BC81AA600B93FA4 /* ToolState.swift in Sources */,
 			);

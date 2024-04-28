@@ -13,16 +13,15 @@ struct HiddenFilesView : View {
     var commandViewmodel = CommandViewmodel()
     
     var body: some View {
-    
-    Toggle(
-        "Hidden files",
-        systemImage: toolState.hiddenFilesVisibility ? "eye.fill" : "eye.slash",
-        isOn: $toolState.hiddenFilesVisibility
-    )
-    .padding(10)
-    .toggleStyle(.switch)
-        .onChange(of: toolState.hiddenFilesVisibility) {
+        ToolItem(
+            offImage: "eye.slash",
+            onImage: "eye.fill",
+            description: "Hidden files",
+            isOn: toolState.hiddenFilesVisibility
+        ) {
+            toolState.hiddenFilesVisibility.toggle()
             commandViewmodel.executeCommand(command: "defaults write com.apple.finder AppleShowAllFiles \(toolState.hiddenFilesVisibility); killall Finder")
         }
+        .padding(10)
     }
 }

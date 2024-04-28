@@ -13,17 +13,15 @@ struct PresentationMode : View {
     var commandViewmodel = CommandViewmodel()
     
     var body: some View {
-    
-    Toggle(
-        "Presentation mode",
-        systemImage: toolState.presentationMode ? "video.fill.badge.checkmark" : "video.badge.checkmark",
-        isOn: $toolState.presentationMode
-    )
-    .padding(10)
-    .toggleStyle(.switch)
-        .onChange(of: toolState.presentationMode) {
-            commandViewmodel.executeCommand(command: "defaults write com.apple.finder CreateDesktop \(!toolState.presentationMode); killall Finder")
-        }
+            ToolItem(
+                offImage: "video.fill.badge.checkmark",
+                onImage: "video.badge.checkmark",
+                description: "Presentation",
+                isOn: toolState.presentationMode
+            ) {
+                toolState.presentationMode.toggle()
+                commandViewmodel.executeCommand(command: "defaults write com.apple.finder CreateDesktop \(!toolState.presentationMode); killall Finder")
+            }
+            .padding(10)
     }
-    
 }
