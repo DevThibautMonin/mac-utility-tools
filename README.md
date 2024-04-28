@@ -13,4 +13,4 @@
   - Off : Desktop folders / files will be visible.
 
 ## Screenshots
-![Hidden files feature](./screenshots/tools.png)
+![Hidden files feature](./screenshots/tools-screen.png)
