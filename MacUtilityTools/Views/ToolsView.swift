@@ -12,7 +12,9 @@ struct ToolsView : View {
     @ObservedObject var toolState : ToolState
     
     var body: some View {
-        HiddenFilesView(toolState: toolState)
-        PresentationMode(toolState: toolState)
+        HStack {
+            HiddenFilesView(toolState: toolState)
+            PresentationMode(toolState: toolState)
+        }
     }
 }
