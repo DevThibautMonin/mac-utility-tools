@@ -12,7 +12,12 @@ struct ToolsView : View {
     @ObservedObject var toolState : ToolState
     
     var body: some View {
-        HStack {
+        let columns: [GridItem] = [
+            GridItem(.flexible()),
+            GridItem(.flexible())
+        ]
+        
+        LazyVGrid(columns: columns) {
             HiddenFilesView(toolState: toolState)
             PresentationMode(toolState: toolState)
         }
