@@ -20,6 +20,7 @@ struct ToolsView : View {
         LazyVGrid(columns: columns) {
             HiddenFilesView(toolState: toolState)
             PresentationMode(toolState: toolState)
+            ClipboardHistory(toolState: toolState)
         }
     }
 }

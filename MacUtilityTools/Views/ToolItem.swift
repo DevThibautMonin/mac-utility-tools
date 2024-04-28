@@ -17,7 +17,11 @@ struct ToolItem: View {
     var body: some View {
         VStack {
             Image(systemName: isOn ? onImage : offImage)
-            Text(description).font(.caption)
+            Text(description)
+                .font(.caption)
+                .lineLimit(nil)
+                .fixedSize(horizontal: false, vertical: true)
+                .multilineTextAlignment(.center)
         }
         .frame(width: 70, height: 40)
         .padding()
@@ -30,12 +34,19 @@ struct ToolItem: View {
         .onTapGesture {
             action()
         }
+        .onHover(perform: { hovering in
+            if hovering {
+                NSCursor.pointingHand.set()
+            } else {
+                NSCursor.arrow.set()
+            }
+        })
     }
 }
 
 #Preview {
     VStack {
-        ToolItem(offImage: "eye.fill", onImage: "eye.slash", description: "Hammer", isOn: true) {
+        ToolItem(offImage: "eye.fill", onImage: "eye.slash", description: "Clipboard history", isOn: true) {
             
         }
     }
