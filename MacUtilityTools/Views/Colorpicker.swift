@@ -1,24 +1,24 @@
 //
-//  ClipboardHistory.swift
+//  Colorpicker.swift
 //  MacUtilityTools
 //
-//  Created by Thibaut Monin on 28/04/2024.
+//  Created by Thibaut Monin on 29/04/2024.
 //
 
 import SwiftUI
 
-struct ClipboardHistory: View {
+struct Colorpicker: View {
     @ObservedObject var toolState : ToolState
     var commandViewmodel = CommandViewmodel()
     
     var body: some View {
         ToolItem(
-            offImage: "list.bullet.clipboard",
-            onImage: "eye.fill",
-            description: "Clipboard history",
+            offImage: "pencil.circle",
+            onImage: "pencil.circle",
+            description: "Colorpicker",
             isOn: toolState.hiddenFilesVisibility
         ) {
-            print("Last text copied : Coucou")
+            print("Colorpicker")
         }
         .padding(10)
     }

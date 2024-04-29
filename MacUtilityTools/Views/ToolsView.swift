@@ -21,6 +21,8 @@ struct ToolsView : View {
             HiddenFilesView(toolState: toolState)
             PresentationMode(toolState: toolState)
             ClipboardHistory(toolState: toolState)
+            Archiver(toolState: toolState)
+            Colorpicker(toolState: toolState)
         }
     }
 }
