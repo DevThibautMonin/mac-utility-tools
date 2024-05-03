@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D61B93812BDFCEC800E3E541 /* Archiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B93802BDFCEC800E3E541 /* Archiver.swift */; };
+		D62C1B042BE4013400C67312 /* ScreenToText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C1B032BE4013400C67312 /* ScreenToText.swift */; };
+		D62C1B072BE409CA00C67312 /* SwiftyTesseract in Frameworks */ = {isa = PBXBuildFile; productRef = D62C1B062BE409CA00C67312 /* SwiftyTesseract */; };
 		D68282BB2BDE7CF000865D9E /* ToolItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68282BA2BDE7CF000865D9E /* ToolItem.swift */; };
 		D68282BD2BDE8FA900865D9E /* ClipboardHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68282BC2BDE8FA900865D9E /* ClipboardHistory.swift */; };
 		D68CA73C2BCED4A10000E242 /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68CA73B2BCED4A10000E242 /* PresentationMode.swift */; };
@@ -23,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		D61B93802BDFCEC800E3E541 /* Archiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archiver.swift; sourceTree = "<group>"; };
+		D62C1B032BE4013400C67312 /* ScreenToText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenToText.swift; sourceTree = "<group>"; };
 		D68282BA2BDE7CF000865D9E /* ToolItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolItem.swift; sourceTree = "<group>"; };
 		D68282BC2BDE8FA900865D9E /* ClipboardHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardHistory.swift; sourceTree = "<group>"; };
 		D68CA73B2BCED4A10000E242 /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D62C1B072BE409CA00C67312 /* SwiftyTesseract in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +79,7 @@
 				D68282BC2BDE8FA900865D9E /* ClipboardHistory.swift */,
 				D61B93802BDFCEC800E3E541 /* Archiver.swift */,
 				D6AB98222BDFD16C006189B5 /* Colorpicker.swift */,
+				D62C1B032BE4013400C67312 /* ScreenToText.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,6 +138,9 @@
 			dependencies = (
 			);
 			name = MacUtilityTools;
+			packageProductDependencies = (
+				D62C1B062BE409CA00C67312 /* SwiftyTesseract */,
+			);
 			productName = MacUtilityTools;
 			productReference = D6DABF8E2BC6DC0B00884CCD /* MacUtilityTools.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +169,9 @@
 				Base,
 			);
 			mainGroup = D6DABF852BC6DC0B00884CCD;
+			packageReferences = (
+				D62C1B052BE409CA00C67312 /* XCRemoteSwiftPackageReference "SwiftyTesseract" */,
+			);
 			productRefGroup = D6DABF8F2BC6DC0B00884CCD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -189,6 +200,7 @@
 			files = (
 				D6DABF922BC6DC0C00884CCD /* MacUtilityToolsApp.swift in Sources */,
 				D6B732502BC81B2900B93FA4 /* ToolsView.swift in Sources */,
+				D62C1B042BE4013400C67312 /* ScreenToText.swift in Sources */,
 				D6B732532BC8220700B93FA4 /* HiddenFilesView.swift in Sources */,
 				D68282BD2BDE8FA900865D9E /* ClipboardHistory.swift in Sources */,
 				D68CA73C2BCED4A10000E242 /* PresentationMode.swift in Sources */,
@@ -401,6 +413,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D62C1B052BE409CA00C67312 /* XCRemoteSwiftPackageReference "SwiftyTesseract" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyTesseract/SwiftyTesseract";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D62C1B062BE409CA00C67312 /* SwiftyTesseract */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D62C1B052BE409CA00C67312 /* XCRemoteSwiftPackageReference "SwiftyTesseract" */;
+			productName = SwiftyTesseract;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D6DABF862BC6DC0B00884CCD /* Project object */;
 }
