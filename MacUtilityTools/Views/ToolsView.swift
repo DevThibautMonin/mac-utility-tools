@@ -23,6 +23,7 @@ struct ToolsView : View {
             ClipboardHistory(toolState: toolState)
             Archiver(toolState: toolState)
             Colorpicker(toolState: toolState)
+            ScreenToText(toolState: toolState)
         }
     }
 }
