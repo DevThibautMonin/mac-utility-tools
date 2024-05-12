@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D61B93812BDFCEC800E3E541 /* Archiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B93802BDFCEC800E3E541 /* Archiver.swift */; };
 		D62C1B042BE4013400C67312 /* ScreenToText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C1B032BE4013400C67312 /* ScreenToText.swift */; };
 		D62C1B072BE409CA00C67312 /* SwiftyTesseract in Frameworks */ = {isa = PBXBuildFile; productRef = D62C1B062BE409CA00C67312 /* SwiftyTesseract */; };
 		D68282BB2BDE7CF000865D9E /* ToolItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68282BA2BDE7CF000865D9E /* ToolItem.swift */; };
@@ -24,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D61B93802BDFCEC800E3E541 /* Archiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archiver.swift; sourceTree = "<group>"; };
 		D62C1B032BE4013400C67312 /* ScreenToText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenToText.swift; sourceTree = "<group>"; };
 		D68282BA2BDE7CF000865D9E /* ToolItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolItem.swift; sourceTree = "<group>"; };
 		D68282BC2BDE8FA900865D9E /* ClipboardHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardHistory.swift; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				D68CA73B2BCED4A10000E242 /* PresentationMode.swift */,
 				D68282BA2BDE7CF000865D9E /* ToolItem.swift */,
 				D68282BC2BDE8FA900865D9E /* ClipboardHistory.swift */,
-				D61B93802BDFCEC800E3E541 /* Archiver.swift */,
 				D6AB98222BDFD16C006189B5 /* Colorpicker.swift */,
 				D62C1B032BE4013400C67312 /* ScreenToText.swift */,
 			);
@@ -205,7 +202,6 @@
 				D68282BD2BDE8FA900865D9E /* ClipboardHistory.swift in Sources */,
 				D68CA73C2BCED4A10000E242 /* PresentationMode.swift in Sources */,
 				D6AB98232BDFD16C006189B5 /* Colorpicker.swift in Sources */,
-				D61B93812BDFCEC800E3E541 /* Archiver.swift in Sources */,
 				D68282BB2BDE7CF000865D9E /* ToolItem.swift in Sources */,
 				D68CA73F2BCEF0B60000E242 /* CommandViewmodel.swift in Sources */,
 				D6B7324E2BC81AA600B93FA4 /* ToolState.swift in Sources */,
